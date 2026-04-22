@@ -1,0 +1,11 @@
+venv/
+.env
+__pycache__/
+*.pyc
+
+data/
+*.db
+*.sqlite
+*.bin
+
+.spotify_cache
