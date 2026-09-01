@@ -1,6 +1,6 @@
-# JARVIS — Real-Time Multimodal AI Assistant
+# Quadro — Real-Time Multimodal AI Assistant
 
-JARVIS is an in-progress personal AI assistant built around an event-driven architecture.
+Quadro is an in-progress personal AI assistant built around an event-driven architecture.
 
 The system integrates voice input, screen understanding, memory, and desktop automation into a modular local pipeline. The focus of this project is system design, real-time interaction, and integration of multiple AI components — not UI polish or production deployment.
 
