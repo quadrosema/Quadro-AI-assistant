@@ -1,3 +1,5 @@
+![Quadro — personal computer agent](https://raw.githubusercontent.com/quadrosema/quadrosema/main/assets/quadro-cover.png)
+
 # Quadro
 
 ### A personal computer agent: reasoning, memory, perception and action
@@ -17,9 +19,22 @@ The central idea is to turn a request into coordinated work across tools and app
 
 The sections below distinguish the public implementation from the current development work. Some internal classes and filenames retain the earlier name **Jarvis**; the project is now presented as **Quadro**.
 
+## Desktop interface preview
+
+![Quadro isolated desktop interface](https://raw.githubusercontent.com/quadrosema/quadrosema/main/assets/quadro-interface.jpg)
+
+The current PySide6 desktop shell, captured using isolated sample conversations. The interface retains the internal **Jarvis** name. This preview shows the UI; it is not a recording of live agent execution.
+
 ## Current development architecture
 
 The current local build extends the original prototype into a stateful agent system:
+
+![Animated architecture of Quadro's current local build](https://raw.githubusercontent.com/quadrosema/quadrosema/main/assets/quadro-architecture.svg)
+
+*Animated illustration of request routing and result flow; not execution telemetry.*
+
+<details>
+<summary>Static architecture diagram</summary>
 
 ```mermaid
 flowchart TD
@@ -37,6 +52,8 @@ flowchart TD
     Knowledge --> Results
     Results --> UI
 ```
+
+</details>
 
 - **Agent coordination:** a supervisor routes work to specialist agents and carries state across the workflow.
 - **Perception and speech:** local transcription and speech synthesis, OCR and screen understanding connect spoken requests to the computer's current context.
